@@ -2,9 +2,10 @@ const string1 = "abcba";
 const string2 = "fabbof";
 const string3 = "abccab";
 
+let changes = 0;
+
 function palindrome(str) {
     let len = str.length;
-    let changes = 0;
     if(len === 0 || len === 1)
         return true;
 
@@ -24,6 +25,6 @@ function palindrome(str) {
     return false;
 }
 
-// console.log(palindrome(string1));
+console.log(palindrome(string1));
 console.log(palindrome(string2));
-// console.log(palindrome(string3));
+console.log(palindrome(string3));
